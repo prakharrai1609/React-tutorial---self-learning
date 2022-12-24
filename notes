@@ -1,3 +1,12 @@
 2022-12-24 12:45:30
 
 - Starting learning from react docs. 
+
+2022-12-24 13:53:20
+
+- If using in strict mode, react dom renders 2 times. If not, its rendering 1 time.
+
+- How to use useState hook? (understanding till now)
+    - For ex. `const [count, set] = useState(0)`
+    - If we write this ^, it means we are declaring a variable similar to a static variable and we are able to render it in real time.
+    - Value inside `useState(___)` is the initial value given to the count.
