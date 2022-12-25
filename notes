@@ -10,3 +10,8 @@
     - For ex. `const [count, set] = useState(0)`
     - If we write this ^, it means we are declaring a variable similar to a static variable and we are able to render it in real time.
     - Value inside `useState(___)` is the initial value given to the count.
+    
+2022-12-25 14:01:46
+
+- How to use useEffect hook? (understanding till now)
+    - It allows the component to do something after rendering the component.
