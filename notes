@@ -10,3 +10,16 @@
     - For ex. `const [count, set] = useState(0)`
     - If we write this ^, it means we are declaring a variable similar to a static variable and we are able to render it in real time.
     - Value inside `useState(___)` is the initial value given to the count.
+    
+2022-12-25 14:01:46
+
+- How to use useEffect hook? (understanding till now)
+    - It allows the component to do something after rendering the component.
+
+2022-12-25 19:47:42
+
+- useStateHook update : 
+    - React elements cannot be edited after they are rendered. Use state hook allows the component to be edited after the component is rendered.
+
+- `Props`
+    - Props are properties or data we can pass b/w different components.

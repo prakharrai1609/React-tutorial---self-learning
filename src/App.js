@@ -1,19 +1,36 @@
-import React, { useEffect, useState } from "react";
+import React, { Component, useEffect, useState } from "react";
+import Greet from "./components/greet.js"
+import Comment from "./components/comment.js"
+
 
 function App() {
 
-  const [time, interval] = useState(new Date().toLocaleTimeString())
+  const [myList, appendList] = useState([])
 
-  useEffect(() => {
-    setInterval(() => {
-      interval(new Date().toLocaleTimeString())
-    }, 1000);
-  })
+  const click = () => {
+    let comment = document.getElementById('comment').value
+    comment = comment ? comment : "Empty comment field"
+
+    appendList((oldList) => [
+      ...oldList,
+      <Comment name="Prakhar" comment={comment} />
+    ]);
+
+    document.getElementById('comment').value = ""
+  }
 
   return (
     <>
       <h1>Test env</h1>
-      <p>{time}</p>
+      <Greet name="Prakhar" lastName="Rai" />
+      <input type="text" name="comment" placeholder="Add your comment" id="comment" />
+      <button className="btn btn-primary" type="submit" onClick={click}>
+        Add comment
+      </button>
+
+      {
+        <div>{myList}</div>
+      }
     </>
   );
 }
