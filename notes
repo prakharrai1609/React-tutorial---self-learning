@@ -1,8 +1,8 @@
-2022-12-24 12:45:30
+2022-12-24 12:45:30 [Starting-out-1]
 
 - Starting learning from react docs. 
 
-2022-12-24 13:53:20
+2022-12-24 13:53:20 
 
 - If using in strict mode, react dom renders 2 times. If not, its rendering 1 time.
 
@@ -11,15 +11,24 @@
     - If we write this ^, it means we are declaring a variable similar to a static variable and we are able to render it in real time.
     - Value inside `useState(___)` is the initial value given to the count.
     
-2022-12-25 14:01:46
+2022-12-25 14:01:46 [Made-a-clock]
 
 - How to use useEffect hook? (understanding till now)
     - It allows the component to do something after rendering the component.
 
-2022-12-25 19:47:42
+2022-12-25 19:47:42 [Made-a-comment-adding-ui-4]
 
 - useStateHook update : 
     - React elements cannot be edited after they are rendered. Use state hook allows the component to be edited after the component is rendered.
 
 - `Props`
     - Props are properties or data we can pass b/w different components.
+
+2022-12-25 20:51:57 [added-a-clock-5]
+
+- we are using a `class based component` to render the clock
+- we use the `constructor` to create a new instance of the date.
+- after the `constructr` is called, `render` is called and it renders the UI
+- after render, `componentDidMount` is called, it updates the date with the new date.
+- after the date is updated, the `render` function is called and it re-renders the UI and so on...
+- Checkout the console to see the flow of code!
